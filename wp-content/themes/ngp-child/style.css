@@ -1,0 +1,111 @@
+/*
+Theme Name:     NGP Child
+Description:    
+Author:         Dan
+Template:       haven
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../haven/style.css");
+
+/* ---------- HOME -CUSTOM BIBLE ---------- */
+
+#custom-bible .pe-wp-default {
+	margin-bottom: 66px;
+	-webkit-columns: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+#custom-bible .pe-wp-default > p {
+	margin-bottom: 1em;
+	-webkit-columns: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+#custom-bible .pe-wp-default > p:first-letter {
+	padding: 0;
+	float: none;
+	font-size: inherit;
+	line-height: inherit;
+}
+#custom-bible .pe-wp-default > p.first:first-letter {
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	float: left;
+	font-size: 75px;
+	line-height: 60px;
+}
+
+/* ---------- FOOTER EMAIL SIGN-UP ---------- */
+
+.form-upper label,
+.form-lower label {
+    width: 31%;
+    margin-right: -3px;
+    margin-bottom: 0;
+    padding: 11px 22px 11px 22px;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 1.125em;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    border-right: 1px solid #fff;
+}
+.form-lower label {
+    width: 24%;
+}
+
+.cm-optin-form input {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.cm-optin-form input:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 769px) {
+	
+#custom-bible .pe-wp-default {
+	margin-bottom: 66px;
+	-webkit-columns: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+
+.form-upper,
+.form-lower,
+.input-holder {
+    width: 100%;
+    margin: 0 0 2px !important;
+    float: none;
+    border: none;
+}
+
+.cm-optin-form label.contact-label {
+    width: 100%;
+    padding-left: 0;
+    display: block;
+    border: none;
+}
+.cm-optin-form .contact-field {
+    padding-left: 0.5em;
+    border: 1px solid #fff;
+}
+#form-button {
+    margin-top: 25px;
+}
+
+}
